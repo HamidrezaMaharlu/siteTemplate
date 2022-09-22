@@ -1,0 +1,64 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 11fr;
+}
+
+aside {
+    grid-area: 2/1/3/2;
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f9fa;
+    border-right: 2px solid rgba(197, 202, 202, 0.36);
+
+}
+
+main {
+    grid-area: 2/2/3/3;
+    width: 100%;
+    height: 100vh;
+}
+.brand{
+    grid-area: 1/1/2/2;
+    width: 100%;
+    height: 100%;
+    background-color: #292e32;
+    border-right: 2px solid #292e32;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+
+
+}
+.search {
+    grid-area: 1/2/2/3;
+    height: 100%;
+    background-color: #4a4f55;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:10px;
+}
+input {
+    background-color: #4a4f55;
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 90%;
+}
+
+
+ul {
+    list-style: none;
+    padding-left: 15px;
+}
+button {
+    background-color: #292e32;
+    color: gray;
+    border: none;
+    outline: none;
+    height: 100%;
+    padding: 0 20px;
+}
